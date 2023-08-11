@@ -36,35 +36,34 @@ def get_memory_usage_stats(node):
     else:
         return jsonify({'error': 'No such node'}), 404
 
-@app.route('/api/memory_usage_top10')
-def get_memory_usage_top10():
+@app.route('/api/memory_current_usage_top10')
+def get_current_memory_usage_top10():
     memory_usage_current = [(node, memory) for node, memory in node_monitor.memory_usage_current.items()]
-    memory_usage_current.sort(key=lambda x: x[1], reverse=True)  # 按照内存使用量降序排列
-    top10 = memory_usage_current[:10]  # 获取内存使用量最高的10个节点
+    memory_usage_current.sort(key=lambda x: x[1], reverse=True)
+    top10 = memory_usage_current[:10]
     return jsonify(top10)
-
-@app.route('/api/ros2_status')
-def get_ros2_status():
-    status = node_monitor.get_ros2_status()
-    return jsonify({'status': status})
-
 @app.route('/api/nodes')
 def get_nodes():
     nodes = list(node_monitor.pid_node_dict.keys())
     return jsonify(nodes)
 
-@app.route('/api/refresh', methods=['POST'])
-def refresh():
-    node_monitor.update_stats()
+@app.route('/api/manual_update', methods=['POST'])
+def manual_update():
+    node_monitor.manual_update_stats()
     return '', 204
+@app.errorhandler(500)
+def internal_error(error):
+    return jsonify({'error': 'Internal server error'}), 500
+def start_monitoring(node_monitor):
+    while True:
+        node_monitor.monitor()
+        time.sleep(1)  # 等待1秒再次监控
 
 if __name__ == "__main__":
     print("start monitor")
-    node_monitor = NodeMonitor(log_directory, "Info")
-
-    # 在新的线程中启动监控程序，以便主线程可以执行其他任务
-    monitor_thread = threading.Thread(target=node_monitor.monitor)
+    node_monitor = NodeMonitor(log_directory, "WARNING")
+    monitor_thread = threading.Thread(target=start_monitoring, args=(node_monitor,)) # 注意在node_monitor后面添加一个逗号
+    monitor_thread.daemon = True
     monitor_thread.start()
-
     # 启动Flask服务器
     app.run()

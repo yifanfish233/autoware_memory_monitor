@@ -103,6 +103,8 @@ class NodeMonitor:
                node_hist.values()):
             self.save_history_usage()
 
+
+
     def save_history_usage(self):
         # 创建一个缓存列表
         data_list = []

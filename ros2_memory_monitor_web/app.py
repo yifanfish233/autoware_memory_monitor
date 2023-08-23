@@ -1,13 +1,25 @@
+# Organized imports
 import sys
 import time
-
-sys.path.append('../ros2_memory_monitor_py/ros2_memory_monitor_py')
-from ros2_memory_monitor_py.ros2_memory_monitor_py.monitor import NodeMonitor
 from flask import Flask, jsonify, render_template
 import threading
+import rclpy
+import os  # For environment variables
+
+# Local imports
+sys.path.append('../ros2_memory_monitor_py/ros2_memory_monitor_py')
+from ros2_memory_monitor_py.ros2_memory_monitor_py.memory_monitor import NodeMonitor
+from ros2_memory_monitor_py.ros2_jitter_monitor_py.jitter_monitor import (
+    JitterMonitor,
+    get_topic_info,
+    get_msg_module,
+    list_topics
+)
 
 app = Flask(__name__)
-log_directory = '/home/robotlab/.ros/log/'  # 替换为实际的日志目录
+
+# Use configurations
+app.config['LOG_DIRECTORY'] = os.environ.get('LOG_DIRECTORY', '/home/robotlab/.ros/log/')
 
 @app.route('/')
 def home():
@@ -51,19 +63,56 @@ def get_nodes():
 def manual_update():
     node_monitor.manual_update_stats()
     return '', 204
+
+
 @app.errorhandler(500)
 def internal_error(error):
     return jsonify({'error': 'Internal server error'}), 500
-def start_monitoring(node_monitor):
+def start_memory_monitoring(node_monitor):
     while True:
         node_monitor.monitor()
         time.sleep(1)  # 等待1秒再次监控
 
+
+# New route to start jitter monitoring for a specific topic
+@app.route('/api/topics')
+def api_list_topics():
+    return jsonify(list_topics())
+
+@app.route('/api/start_jitter_monitor/<topic>')
+def start_jitter_monitor(topic):
+    topic_type = get_topic_info(topic)
+    if not topic_type:
+        return jsonify({'error': f"Failed to get topic type for '{topic}'"}), 404
+
+    msg_module = get_msg_module(topic_type)
+    if not msg_module:
+        return jsonify({'error': f"Failed to get message module for topic type '{topic_type}'"}), 404
+
+    # Ensure rclpy is initialized before creating a node
+    if not rclpy.ok():
+        rclpy.init()
+
+    jitter_monitor = JitterMonitor(topic, msg_module)
+    threading.Thread(target=lambda: rclpy.spin(jitter_monitor)).start()
+    return jsonify({'status': 'Jitter monitoring started'}), 200
+
+
 if __name__ == "__main__":
-    print("start monitor")
-    node_monitor = NodeMonitor(log_directory, "WARNING")
-    monitor_thread = threading.Thread(target=start_monitoring, args=(node_monitor,)) # 注意在node_monitor后面添加一个逗号
-    monitor_thread.daemon = True
-    monitor_thread.start()
-    # 启动Flask服务器
+    print("Starting monitors...")
+
+    # Memory Monitor Initialization
+    node_monitor = NodeMonitor(app.config['LOG_DIRECTORY'], "WARNING")
+    memory_thread = threading.Thread(target=start_memory_monitoring, args=(node_monitor,))
+    memory_thread.daemon = True
+    memory_thread.start()
+
+    # Initialize ROS for potential jitter monitoring
+    rclpy.init()
+
+    # Start Flask server
     app.run()
+
+    # Shutdown ROS at the end
+    rclpy.shutdown()
+

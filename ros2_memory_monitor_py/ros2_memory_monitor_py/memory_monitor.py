@@ -200,39 +200,39 @@ class NodeMonitor:
                     # PID相同，保持状态不变
                     logging.info(f"Node {node} is working with the same PID: {old_pid}")
 
-def main():
-    log_directory = '/home/robotlab/.ros/log/'  # 替换为实际的日志目录
-    node_monitor = NodeMonitor(log_directory, "WARNING")
-
-    # Keep track of the previous top 10 nodes by average memory usage
-    previous_top_10_nodes = []
-
-    while True:
-        node_monitor.monitor(MAX_HISTORY_PER_NODE=10)  # 直接在主线程中调用monitor
-
-        average_memory_usage = {}
-        for node in node_monitor.pid_node_dict.keys():
-            stats = node_monitor.get_memory_usage_stats(node)
-            if stats is not None:
-                average_memory_usage[node] = stats['average']
-
-        # Get the top 10 nodes by average memory usage
-        top_10_nodes = sorted(average_memory_usage.items(), key=lambda x: x[1], reverse=True)[:10]
-
-        print("Top 10 nodes by average memory usage:")
-        for rank, (node, avg_usage) in enumerate(top_10_nodes, 1):
-            print(f"Rank #{rank}: Node: {node}, Average Memory Usage: {avg_usage:.2f} MB")
-            # Check if the node changed its position
-            if previous_top_10_nodes and rank <= len(previous_top_10_nodes) and node != previous_top_10_nodes[rank - 1][0]:
-                print(f"Position changed at rank #{rank}: {previous_top_10_nodes[rank - 1][0]} -> {node}")
-
-        # Save the current top 10 nodes for the next iteration
-        previous_top_10_nodes = top_10_nodes.copy()
-
-        # Wait for 1 second before updating the information
-        time.sleep(0.01)
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     log_directory = '/home/robotlab/.ros/log/'  # 替换为实际的日志目录
+#     node_monitor = NodeMonitor(log_directory, "WARNING")
+#
+#     # Keep track of the previous top 10 nodes by average memory usage
+#     previous_top_10_nodes = []
+#
+#     while True:
+#         node_monitor.monitor(MAX_HISTORY_PER_NODE=10)  # 直接在主线程中调用monitor
+#
+#         average_memory_usage = {}
+#         for node in node_monitor.pid_node_dict.keys():
+#             stats = node_monitor.get_memory_usage_stats(node)
+#             if stats is not None:
+#                 average_memory_usage[node] = stats['average']
+#
+#         # Get the top 10 nodes by average memory usage
+#         top_10_nodes = sorted(average_memory_usage.items(), key=lambda x: x[1], reverse=True)[:10]
+#
+#         print("Top 10 nodes by average memory usage:")
+#         for rank, (node, avg_usage) in enumerate(top_10_nodes, 1):
+#             print(f"Rank #{rank}: Node: {node}, Average Memory Usage: {avg_usage:.2f} MB")
+#             # Check if the node changed its position
+#             if previous_top_10_nodes and rank <= len(previous_top_10_nodes) and node != previous_top_10_nodes[rank - 1][0]:
+#                 print(f"Position changed at rank #{rank}: {previous_top_10_nodes[rank - 1][0]} -> {node}")
+#
+#         # Save the current top 10 nodes for the next iteration
+#         previous_top_10_nodes = top_10_nodes.copy()
+#
+#         # Wait for 1 second before updating the information
+#         time.sleep(0.01)
+#
+# if __name__ == "__main__":
+#     main()
 
 

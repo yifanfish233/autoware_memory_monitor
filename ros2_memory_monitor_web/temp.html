@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ROS2 Node Dashboard</title>
+    <!-- 引入 Bootstrap CSS 样式表 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- 引入 jQuery 和 Bootstrap 的 JavaScript 文件 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- 引入 Chart.js 图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- 主标题 -->
+        <h1 class="text-center mb-4">ROS2 Node Dashboard</h1>
+
+        <div class="row">
+            <!-- 左侧列：包含功能链接 -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Home</a>
+                    <a href="#" class="list-group-item list-group-item-action">Sensors</a>
+                    <a href="#" class="list-group-item list-group-item-action">Attacks</a>
+                    <a href="#" class="list-group-item list-group-item-action">Export</a>
+                </div>
+            </div>
+
+
+            <!-- 右侧主体部分 -->
+            <div class="col-md-9">
+                <!-- 顶部信息条 -->
+                <style>
+                    .border-right-custom {
+                        border-right: 1px solid rgba(0, 0, 0, 0.1); /* 半透明的黑色 */
+                    }
+                </style>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 d-flex align-items-center border-right-custom">
+                                <i class="fas fa-network-wired fa-2x mr-2"></i>
+                                <div>
+                                    <h6 class="card-title">Total nodes</h6>
+                                    <p id="total-nodes" class="card-text">0</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center border-right-custom">
+                                <i class="fas fa-power-off fa-2x mr-2"></i>
+                                <div>
+                                    <h6 class="card-title">Activate nodes</h6>
+                                    <p id="live-nodes" class="card-text">0</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center border-right-custom">
+                                <i class="fas fa-memory fa-2x mr-2"></i>
+                                <div>
+                                    <h6 class="card-title">Total Memory Usage</h6>
+                                    <p id="total-memory" class="card-text">0MB</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center">
+                                <i class="fas fa-clock fa-2x mr-2"></i>
+                                <div>
+                                    <h6 class="card-title">Average Delay</h6>
+                                    <p id="average-latency" class="card-text">0ms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tab切换按钮 -->
+                <ul class="nav nav-pills mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#memoryMonitor">Memory Monitor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#jitterMonitor">Jitter Monitor</a>
+                    </li>
+                </ul>
+
+                <!-- Tab内容 -->
+                <div class="tab-content">
+                    <!-- Memory Monitor Tab -->
+                    <div class="tab-pane fade show active" id="memoryMonitor">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <button id="refresh-button" class="btn btn-info mb-3" style="display: none;">Refresh</button>
+
+                                <!-- 节点选择器 -->
+                                <div class="mb-3">
+                                    <label for="node-selector">Select Node:</label>
+                                    <select id="node-selector" class="form-control mb-4"></select>
+                                </div>
+
+                                <!-- 内存使用表格 -->
+                                <table id="memory-usage-table" class="table table-bordered mb-4">
+                                    <thead>
+                                        <tr>
+                                            <th>Node</th>
+                                            <th>Memory (MB)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 数据将由JavaScript填充 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jitter Monitor Tab -->
+                    <div class="tab-pane fade" id="jitterMonitor">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <!-- Jitter监视器控制 -->
+                                <h5>Jitter Monitor</h5>
+                                <p>Select a topic to monitor for jitter:</p>
+                                <select id="topicSelector" class="form-control mb-3"></select>
+                                <button id="startJitterMonitorBtn" class="btn btn-primary mb-4">Start Monitoring</button>
+
+                                <!-- 实时Jitter监视卡片 -->
+                                <h5 class="card-title">Live Jitter Monitor</h5>
+                                <canvas id="jitter-live-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 引入你的JavaScript文件 -->
+    <script src="static/js/memoryMonitor.js"></script>
+    <script src="static/js/jitterMonitor.js"></script>
+    <script src="static/js/utils.js"></script>
+</body>
+
+</html>

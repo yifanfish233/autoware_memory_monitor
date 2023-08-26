@@ -55,14 +55,3 @@ def list_topics():
     temp_node.destroy_node()
     return topics
 
-# def main(args=None):
-#     rclpy.init(args=args)
-#     topic_name = input("Enter the name of the topic you want to monitor: ")
-#     jitter_monitor = JitterMonitor(topic_name)
-#     rclpy.spin(jitter_monitor)
-#
-#     jitter_monitor.destroy_node()
-#     rclpy.shutdown()
-#
-# if __name__ == '__main__':
-#     main()

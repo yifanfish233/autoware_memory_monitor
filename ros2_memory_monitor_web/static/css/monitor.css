@@ -1,0 +1,77 @@
+/* 设置全局字体 */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e6f4ea;  /* 浅绿色 */
+}
+
+/* 重置容器和行的padding，使左侧导航完全贴合左边界 */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.container-fluid, .row {
+    background-color: #e6f4ea;
+}
+/* 设置左侧导航栏样式 */
+.list-group-item {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+.sidebar {
+    height: 100vh; /* 视窗高度 */
+    background-color: #2c3e50; /* 深蓝色背景 */
+    transition: margin .3s;  /* 过渡效果 */
+}
+.sidebar .list-group-item {
+    color: #fff;
+    background-color: transparent; /* 移除默认的背景色 */
+}
+
+.sidebar .list-group-item:hover, .sidebar .list-group-item.active {
+    background-color: #34495e; /* 当鼠标悬停或项被选中时的背景色 */
+    color: #fff;
+}
+.sidebar.collapsed {
+    width: 60px; /* 或者您想要的任何宽度 */
+    overflow: hidden;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.list-group {
+    padding-left: 0;
+}
+
+/* 设置右侧内容的样式 */
+.col-md-9 {
+    padding-left: 40px;  /* 添加左侧的内边距来让内容看起来更加宽敞 */
+}
+
+/* 设置卡片的样式 */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: white;  /* 保持白色背景 */
+}
+
+/* 设置顶部信息条的边框颜色 */
+.border-right-custom {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);  /* 半透明的黑色 */
+}

@@ -115,68 +115,68 @@ const refreshTop10 = () => {
     });
 }
 
-$(document).ready(() => {
-    const checkROS2Status = setInterval(() => {
-        $.ajax({
-            url: '/api/ros2_status',
-            type: 'GET',
-            cache: false,
-            success: function (data) {
-                if (data.status === 'running') {
-                    clearInterval(checkROS2Status);
-                    $('#status').text('ROS2 Autoware is running');
-                    $('#refresh-button').hide();
-
-                    $.ajax({
-                        url: '/api/nodes',
-                        type: 'GET',
-                        cache: false,
-                        success: function (nodes) {
-                            var $nodeSelector = $('#node-selector');
-                            $nodeSelector.empty();
-                            nodes.forEach(function (node) {
-                                $nodeSelector.append('<option value="' + node + '">' + node + '</option>');
-                            });
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            console.error('Nodes request error: ' + textStatus);
-                        }
-                    });
-
-                    if (memoryInterval) {
-                        clearInterval(memoryInterval);
-                    }
-                    updateMemoryUsage();
-                    memoryInterval = setInterval(updateMemoryUsage, 1000);
-                } else {
-                    $('#status').text('No ROS2 launched');
-                    $('#refresh-button').show();
-                }
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.error('ROS2 status request error: ' + textStatus);
-            }
-        });
-    }, 1000);
-
-    $('#node-selector').change(() => {
-        updateMemoryUsage();
-        if (memoryInterval) {
-            clearInterval(memoryInterval);
-        }
-        memoryInterval = setInterval(updateMemoryUsage, 1000);
-    });
-
-    $('#refresh-button').click(() => {
-        $.ajax({
-            url: '/api/refresh',
-            type: 'POST',
-            success: function () {
-                checkROS2Status();
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.error('Refresh request error: ' + textStatus);
-            }
-        });
-    });
-});
+// $(document).ready(() => {
+//     const checkROS2Status = setInterval(() => {
+//         $.ajax({
+//             url: '/api/ros2_status',
+//             type: 'GET',
+//             cache: false,
+//             success: function (data) {
+//                 if (data.status === 'running') {
+//                     clearInterval(checkROS2Status);
+//                     $('#status').text('ROS2 Autoware is running');
+//                     $('#refresh-button').hide();
+//
+//                     $.ajax({
+//                         url: '/api/nodes',
+//                         type: 'GET',
+//                         cache: false,
+//                         success: function (nodes) {
+//                             var $nodeSelector = $('#node-selector');
+//                             $nodeSelector.empty();
+//                             nodes.forEach(function (node) {
+//                                 $nodeSelector.append('<option value="' + node + '">' + node + '</option>');
+//                             });
+//                         },
+//                         error: function (jqXHR, textStatus, errorThrown) {
+//                             console.error('Nodes request error: ' + textStatus);
+//                         }
+//                     });
+//
+//                     if (memoryInterval) {
+//                         clearInterval(memoryInterval);
+//                     }
+//                     updateMemoryUsage();
+//                     memoryInterval = setInterval(updateMemoryUsage, 1000);
+//                 } else {
+//                     $('#status').text('No ROS2 launched');
+//                     $('#refresh-button').show();
+//                 }
+//             },
+//             error: function (jqXHR, textStatus, errorThrown) {
+//                 console.error('ROS2 status request error: ' + textStatus);
+//             }
+//         });
+//     }, 1000);
+//
+//     $('#node-selector').change(() => {
+//         updateMemoryUsage();
+//         if (memoryInterval) {
+//             clearInterval(memoryInterval);
+//         }
+//         memoryInterval = setInterval(updateMemoryUsage, 1000);
+//     });
+//
+//     $('#refresh-button').click(() => {
+//         $.ajax({
+//             url: '/api/refresh',
+//             type: 'POST',
+//             success: function () {
+//                 checkROS2Status();
+//             },
+//             error: function (jqXHR, textStatus, errorThrown) {
+//                 console.error('Refresh request error: ' + textStatus);
+//             }
+//         });
+//     });
+// });

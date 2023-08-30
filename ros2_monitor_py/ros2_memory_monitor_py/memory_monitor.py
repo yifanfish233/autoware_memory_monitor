@@ -200,6 +200,17 @@ class NodeMonitor:
                     # PID相同，保持状态不变
                     logging.info(f"Node {node} is working with the same PID: {old_pid}")
 
+    def get_total_nodes(self):
+        return len(self.pid_node_dict.keys())
+
+    def get_total_memory_usage(self):
+        total_memory = 0
+        for node in self.pid_node_dict:
+            memory = self.get_memory_usage(node)
+            if memory is not None:
+                total_memory += memory
+        return round(total_memory, 2)
+
 # def main():
 #     log_directory = '/home/robotlab/.ros/log/'  # 替换为实际的日志目录
 #     node_monitor = NodeMonitor(log_directory, "WARNING")

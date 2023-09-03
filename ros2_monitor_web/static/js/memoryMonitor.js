@@ -180,3 +180,26 @@ const refreshTop10 = () => {
 //         });
 //     });
 // });
+
+$(document).ready(function(){
+    // 当用户点击下拉菜单时
+    $('#node-selector').focus(function() {
+        // 发送AJAX请求到Flask获取模块列表
+        $.ajax({
+            url: "/get_modules", // Flask 端点
+            method: "GET",
+            success: function(response) {
+                updateDropdown(response.modules); // 当数据返回时，更新下拉菜单
+            }
+        });
+    });
+});
+
+function updateDropdown(modules) {
+    var dropdown = $("#node-selector");
+    dropdown.empty(); // 清空现有数据
+
+    $.each(modules, function(index, module) {
+        dropdown.append(new Option(module, module)); // 添加新选项
+    });
+}

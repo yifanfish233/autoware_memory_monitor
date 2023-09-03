@@ -6,7 +6,8 @@ import statistics
 import threading
 import time
 import logging
-
+import rclpy
+from rclpy.node import Node
 class NodeMonitor:
     def __init__(self, log_directory, log_level):
         self.log_directory = log_directory
@@ -21,7 +22,32 @@ class NodeMonitor:
         if not isinstance(numeric_level, int):
             raise ValueError('Invalid log level: %s' % log_level)
         logging.basicConfig(level=numeric_level)
+        rclpy.init(args=None)
+        self.ros2_node = Node('node_monitor')
         self.update_stats()
+
+    def __del__(self):
+        self.ros2_node.destroy_node()
+        rclpy.shutdown()
+
+    def get_all_active_nodes(self):
+        return self.ros2_node.get_node_names()
+
+    def get_memory_usage(self, node):
+        with self.lock:
+            pid = self.pid_node_dict.get(node)
+            if pid is None:
+                return None
+            try:
+                process = psutil.Process(pid)
+                mem_info = process.memory_info()
+                return mem_info.rss / 1024 / 1024
+            except psutil.NoSuchProcess:
+                logging.warning(f"Process with PID: {pid} doesn't exist for node {node}. Updating PID and stats...")
+                self.update_stats()  # Requery the ROS 2 system
+                return None
+
+
 
     def create_log_file(self):
         log_folders = [f.path for f in os.scandir(self.log_directory) if f.is_dir()]
@@ -210,6 +236,56 @@ class NodeMonitor:
             if memory is not None:
                 total_memory += memory
         return round(total_memory, 2)
+
+    def get_module_name(self, node_name):
+        """
+        从完整的node名称中提取module名。
+
+        参数：
+        - node_name (str): 完整的node名称，如 "/module_name/node_name"
+
+        返回：
+        - str: module名，如 "/module_name"
+        """
+        return node_name.split("/")[1]
+
+    def get_modules(self):
+        with self.lock:  # 使用锁来保护共享数据的读取
+            # 从每个node名称中提取module名称，然后用集合来去重
+            module_set = {self.get_module_name(node) for node in self.pid_node_dict.keys()}
+            return list(module_set)
+
+    def get_nodes_from_module(self, module_name):
+        """
+        返回指定module下的所有nodes。
+
+        参数：
+        - module_name (str): 模块名称，如 "/module_name"
+
+        返回：
+        - list[str]: 指定module下的所有nodes。
+        """
+        nodes_in_module = []
+        for node in self.pid_node_dict.keys():
+            if self.get_module_name(node) == module_name:
+                nodes_in_module.append(node)
+        return nodes_in_module
+
+    def get_memory_usage_stats_for_module(self, module_name):
+        """
+        返回指定module下的所有nodes的内存使用统计数据。
+
+        参数：
+        - module_name (str): 模块名称，如 "/module_name"
+
+        返回：
+        - dict: 包含每个node的内存使用统计数据的字典。
+        """
+        nodes_in_module = self.get_nodes_from_module(module_name)
+        memory_stats = {}
+        for node in nodes_in_module:
+            memory_stats[node] = self.get_memory_usage_stats(node)
+        return memory_stats
 
 # def main():
 #     log_directory = '/home/robotlab/.ros/log/'  # 替换为实际的日志目录

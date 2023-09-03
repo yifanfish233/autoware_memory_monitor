@@ -138,9 +138,9 @@
                                         <div class="card-body">
                                             <button id="refresh-button" class="btn btn-info mb-3" style="display: none;">Refresh</button>
 
-                                            <!-- 节点选择器 -->
+                                            <!-- 模块选择器 -->
                                             <div class="mb-3">
-                                                <label for="node-selector">Select Node:</label>
+                                                <label for="node-selector">Select Module:</label>
                                                 <select id="node-selector" class="form-control mb-4"></select>
                                             </div>
 
@@ -202,56 +202,10 @@
         </div>
     </div>
     <!-- 引入你的JavaScript文件 -->
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="static/js/utils.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
-    <script>
-        var socket = io.connect('http://localhost:5000', {
-            reconnection: true,
-            reconnectionDelay: 1000,
-            reconnectionDelayMax: 5000,
-            reconnectionAttempts: Infinity,
-            pingInterval: 15000, // 15 seconds
-            pingTimeout: 50000  // 50 seconds
-        });
-
-        socket.on('ping', function(data) {
-            console.log("Received:", data);
-            calculateAndDisplayLatency(data);
-        });
-
-        socket.on('update_data', displayReceivedData);
-
-        socket.on('error', function(error) {
-            console.error("Socket.io Error:", error);
-        });
-
-        socket.on('connect', function() {
-            console.log('Connected to the server.');
-        });
-
-        socket.on('disconnect', function() {
-            console.log('Disconnected from the server.');
-        });
-
-        socket.on('reconnect', function(attemptNumber) {
-            console.log('Successfully reconnected on attempt', attemptNumber);
-        });
-
-        socket.on('reconnect_attempt', function(attemptNumber) {
-            console.log('Attempting to reconnect, attempt number', attemptNumber);
-        });
-
-        socket.on('reconnect_error', function(error) {
-            console.error('Reconnection error:', error);
-        });
-
-        socket.on('reconnect_failed', function() {
-            console.error('Failed to reconnect after multiple attempts.');
-        });
-    </script>
-
-    <script src="static/js/memoryMonitor.js"></script>
-    <script src="static/js/jitterMonitor.js"></script>
+    <script type="module" src="static/js/memoryMonitor.js"></script>
+    <script type="module" src="static/js/jitterMonitor.js"></script>
 
 </body>
 

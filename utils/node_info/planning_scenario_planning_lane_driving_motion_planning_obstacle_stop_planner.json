@@ -1,0 +1,32 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/clear_velocity_limit": "tier4_planning_msgs/msg/VelocityLimitClearCommand",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/adaptive_cruise_control/debug_values": "tier4_debug_msgs/msg/Float32MultiArrayStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/debug/marker": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/obstacle_stop/debug_values": "tier4_debug_msgs/msg/Float32MultiArrayStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/virtual_wall": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/max_velocity_candidates": "tier4_planning_msgs/msg/VelocityLimit",
+        "/planning/scenario_planning/status/stop_reason": "diagnostic_msgs/msg/DiagnosticStatus",
+        "/planning/scenario_planning/status/stop_reasons": "tier4_planning_msgs/msg/StopReasonArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/acceleration": "geometry_msgs/msg/AccelWithCovarianceStamped",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/input/expand_stop_range": "tier4_planning_msgs/msg/ExpandStopRange",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/trajectory": "autoware_auto_planning_msgs/msg/Trajectory"
+    }
+}

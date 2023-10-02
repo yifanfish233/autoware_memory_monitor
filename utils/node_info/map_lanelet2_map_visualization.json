@@ -1,0 +1,19 @@
+{
+    "Node": "/map/lanelet2_map_visualization",
+    "publishers": {
+        "/map/vector_map_marker": "visualization_msgs/msg/MarkerArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/map/lanelet2_map_visualization/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/map/lanelet2_map_visualization/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/map/lanelet2_map_visualization/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/map/lanelet2_map_visualization/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/map/lanelet2_map_visualization/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/map/lanelet2_map_visualization/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

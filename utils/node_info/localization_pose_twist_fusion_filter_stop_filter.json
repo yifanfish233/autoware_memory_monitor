@@ -1,0 +1,20 @@
+{
+    "Node": "/localization/pose_twist_fusion_filter/stop_filter",
+    "publishers": {
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/localization/pose_twist_fusion_filter/debug/stop_flag": "tier4_debug_msgs/msg/BoolStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/pose_twist_fusion_filter/stop_filter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/pose_twist_fusion_filter/stop_filter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/pose_twist_fusion_filter/stop_filter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/pose_twist_fusion_filter/stop_filter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/pose_twist_fusion_filter/stop_filter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/pose_twist_fusion_filter/stop_filter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/pose_twist_fusion_filter/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

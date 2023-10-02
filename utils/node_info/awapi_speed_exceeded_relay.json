@@ -1,0 +1,19 @@
+{
+    "Node": "/awapi/speed_exceeded_relay",
+    "publishers": {
+        "/awapi/autoware/get/stop_speed_exceeded": "tier4_planning_msgs/msg/StopSpeedExceeded",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/speed_exceeded_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/speed_exceeded_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/speed_exceeded_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/speed_exceeded_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/speed_exceeded_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/speed_exceeded_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/motion_velocity_smoother/stop_speed_exceeded": "tier4_planning_msgs/msg/StopSpeedExceeded"
+    }
+}

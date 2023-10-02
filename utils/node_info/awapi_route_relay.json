@@ -1,0 +1,19 @@
+{
+    "Node": "/awapi/route_relay",
+    "publishers": {
+        "/awapi/autoware/get/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/route_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/route_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/route_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/route_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/route_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/route_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute"
+    }
+}

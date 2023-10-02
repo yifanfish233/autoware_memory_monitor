@@ -1,0 +1,29 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/clear_velocity_limit": "tier4_planning_msgs/msg/VelocityLimitClearCommand",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/debug/footprint": "geometry_msgs/msg/PolygonStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/debug/footprint_offset": "geometry_msgs/msg/PolygonStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/debug/footprint_recover_offset": "geometry_msgs/msg/PolygonStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/debug/marker": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/virtual_wall": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/max_velocity_candidates": "tier4_planning_msgs/msg/VelocityLimit",
+        "/planning/scenario_planning/status/no_start_reason": "diagnostic_msgs/msg/DiagnosticStatus",
+        "/planning/scenario_planning/status/stop_reasons": "tier4_planning_msgs/msg/StopReasonArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

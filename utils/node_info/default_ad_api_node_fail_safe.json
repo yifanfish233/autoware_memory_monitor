@@ -1,0 +1,19 @@
+{
+    "Node": "/default_ad_api/node/fail_safe",
+    "publishers": {
+        "/api/fail_safe/mrm_state": "autoware_adapi_v1_msgs/msg/MrmState",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/default_ad_api/node/fail_safe/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/node/fail_safe/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/node/fail_safe/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/node/fail_safe/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/node/fail_safe/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/node/fail_safe/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/fail_safe/mrm_state": "autoware_adapi_v1_msgs/msg/MrmState"
+    }
+}

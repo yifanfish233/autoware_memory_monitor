@@ -1,0 +1,14 @@
+{
+    "Node": "/launch_ros_988691",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/launch_ros_988691/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/launch_ros_988691/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/launch_ros_988691/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/launch_ros_988691/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/launch_ros_988691/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/launch_ros_988691/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {}
+}

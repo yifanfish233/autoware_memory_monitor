@@ -1,0 +1,11 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/motion_planning/transform_listener_impl_7f5bc0005c08",
+    "publishers": {
+        "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "subscribers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/tf_static": "tf2_msgs/msg/TFMessage"
+    }
+}

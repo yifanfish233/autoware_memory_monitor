@@ -1,0 +1,19 @@
+{
+    "Node": "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/downsampled/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/clustering/voxel_grid_filter_robotlab_3060_988691_7368076307571525038/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/pointcloud_map_filtered/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

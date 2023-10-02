@@ -1,0 +1,10 @@
+{
+    "Node": "/autoware_api/external/autoware_iv_adaptor",
+    "publishers": {
+        "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

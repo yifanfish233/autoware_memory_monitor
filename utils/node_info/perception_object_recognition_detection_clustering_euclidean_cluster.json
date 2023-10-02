@@ -1,0 +1,20 @@
+{
+    "Node": "/perception/object_recognition/detection/clustering/euclidean_cluster",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/clusters": "tier4_perception_msgs/msg/DetectedObjectsWithFeature",
+        "/perception/object_recognition/detection/clustering/debug/clusters": "sensor_msgs/msg/PointCloud2",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/clustering/euclidean_cluster/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/outlier_filter/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

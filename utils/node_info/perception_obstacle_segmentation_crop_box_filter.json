@@ -1,0 +1,22 @@
+{
+    "Node": "/perception/obstacle_segmentation/crop_box_filter",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/obstacle_segmentation/crop_box_filter/crop_box_polygon": "geometry_msgs/msg/PolygonStamped",
+        "/perception/obstacle_segmentation/crop_box_filter/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/obstacle_segmentation/crop_box_filter/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/obstacle_segmentation/range_cropped/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/obstacle_segmentation/crop_box_filter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/obstacle_segmentation/crop_box_filter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/obstacle_segmentation/crop_box_filter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/obstacle_segmentation/crop_box_filter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/obstacle_segmentation/crop_box_filter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/obstacle_segmentation/crop_box_filter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/concatenated/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

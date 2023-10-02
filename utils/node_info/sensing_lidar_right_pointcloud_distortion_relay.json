@@ -1,0 +1,19 @@
+{
+    "Node": "/sensing/lidar/right/pointcloud_distortion_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/lidar/right/rectified/pointcloud_ex": "sensor_msgs/msg/PointCloud2",
+        "/sensing/lidar/right/pointcloud_distortion_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/sensing/lidar/right/pointcloud_distortion_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/sensing/lidar/right/pointcloud_distortion_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/sensing/lidar/right/pointcloud_distortion_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/sensing/lidar/right/pointcloud_distortion_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/sensing/lidar/right/pointcloud_distortion_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/right/mirror_cropped/pointcloud_ex": "sensor_msgs/msg/PointCloud2"
+    }
+}

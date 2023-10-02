@@ -1,0 +1,19 @@
+{
+    "Node": "/autoware_api/external/service",
+    "publishers": {
+        "/api/external/get/service": "tier4_external_api_msgs/msg/Service",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/service": "tier4_external_api_msgs/srv/SetService",
+        "/autoware_api/external/service/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/service/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/service/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/service/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/service/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/service/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "Node": "/default_ad_api/node/routing",
+    "publishers": {
+        "/api/routing/route": "autoware_adapi_v1_msgs/msg/Route",
+        "/api/routing/state": "autoware_adapi_v1_msgs/msg/RouteState",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/api/routing/clear_route": "autoware_adapi_v1_msgs/srv/ClearRoute",
+        "/api/routing/set_route": "autoware_adapi_v1_msgs/srv/SetRoute",
+        "/api/routing/set_route_points": "autoware_adapi_v1_msgs/srv/SetRoutePoints",
+        "/default_ad_api/node/routing/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/node/routing/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/node/routing/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/node/routing/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/node/routing/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/node/routing/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/planning/mission_planning/clear_route": "autoware_adapi_v1_msgs/srv/ClearRoute",
+        "/planning/mission_planning/set_route": "autoware_planning_msgs/srv/SetRoute",
+        "/planning/mission_planning/set_route_points": "autoware_adapi_v1_msgs/srv/SetRoutePoints",
+        "/system/operation_mode/change_operation_mode": "tier4_system_msgs/srv/ChangeOperationMode"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/planning/mission_planning/route_state": "autoware_adapi_v1_msgs/msg/RouteState",
+        "/system/operation_mode/state": "autoware_adapi_v1_msgs/msg/OperationModeState"
+    }
+}

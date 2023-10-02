@@ -1,0 +1,19 @@
+{
+    "Node": "/sensing/vehicle_velocity_converter_node",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/vehicle_velocity_converter/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/sensing/vehicle_velocity_converter_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/sensing/vehicle_velocity_converter_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/sensing/vehicle_velocity_converter_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/sensing/vehicle_velocity_converter_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/sensing/vehicle_velocity_converter_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/sensing/vehicle_velocity_converter_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/vehicle/status/velocity_status": "autoware_auto_vehicle_msgs/msg/VelocityReport"
+    }
+}

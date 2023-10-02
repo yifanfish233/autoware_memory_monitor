@@ -1,0 +1,19 @@
+{
+    "Node": "/perception/object_recognition/detection/clustering/shape_estimation",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/objects_with_feature": "tier4_perception_msgs/msg/DetectedObjectsWithFeature",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/clustering/shape_estimation/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/clustering/shape_estimation/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/clustering/shape_estimation/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/clustering/shape_estimation/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/clustering/shape_estimation/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/clustering/shape_estimation/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/clusters": "tier4_perception_msgs/msg/DetectedObjectsWithFeature"
+    }
+}

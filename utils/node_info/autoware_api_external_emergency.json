@@ -1,0 +1,21 @@
+{
+    "Node": "/autoware_api/external/emergency",
+    "publishers": {
+        "/api/external/get/emergency": "tier4_external_api_msgs/msg/Emergency",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/emergency": "tier4_external_api_msgs/srv/SetEmergency",
+        "/autoware_api/external/emergency/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/emergency/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/emergency/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/emergency/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/emergency/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/emergency/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/autoware/set/emergency": "tier4_external_api_msgs/srv/SetEmergency"
+    },
+    "subscribers": {
+        "/api/autoware/get/emergency": "tier4_external_api_msgs/msg/Emergency",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

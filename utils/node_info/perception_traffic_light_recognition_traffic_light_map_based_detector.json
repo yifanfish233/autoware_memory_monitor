@@ -1,0 +1,22 @@
+{
+    "Node": "/perception/traffic_light_recognition/traffic_light_map_based_detector",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/rois": "autoware_auto_perception_msgs/msg/TrafficLightRoiArray",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/debug/markers": "visualization_msgs/msg/MarkerArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/traffic_light_recognition/traffic_light_map_based_detector/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/sensing/camera/traffic_light/camera_info": "sensor_msgs/msg/CameraInfo"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Node": "/awapi/nearest_traffic_signal_relay",
+    "publishers": {
+        "/awapi/traffic_light/get/nearest_traffic_signal": "autoware_auto_perception_msgs/msg/LookingTrafficSignal",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/nearest_traffic_signal_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/nearest_traffic_signal_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/nearest_traffic_signal_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/nearest_traffic_signal_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/nearest_traffic_signal_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/nearest_traffic_signal_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/lane_driving/behavior_planning/debug/traffic_signal": "autoware_auto_perception_msgs/msg/LookingTrafficSignal"
+    }
+}

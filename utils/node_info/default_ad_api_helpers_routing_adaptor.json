@@ -1,0 +1,23 @@
+{
+    "Node": "/default_ad_api/helpers/routing_adaptor",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/default_ad_api/helpers/routing_adaptor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/helpers/routing_adaptor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/helpers/routing_adaptor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/helpers/routing_adaptor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/helpers/routing_adaptor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/helpers/routing_adaptor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/routing/clear_route": "autoware_adapi_v1_msgs/srv/ClearRoute",
+        "/api/routing/set_route_points": "autoware_adapi_v1_msgs/srv/SetRoutePoints"
+    },
+    "subscribers": {
+        "/api/routing/state": "autoware_adapi_v1_msgs/msg/RouteState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/checkpoint": "geometry_msgs/msg/PoseStamped",
+        "/planning/mission_planning/goal": "geometry_msgs/msg/PoseStamped"
+    }
+}

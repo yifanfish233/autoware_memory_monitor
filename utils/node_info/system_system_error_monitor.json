@@ -1,0 +1,24 @@
+{
+    "Node": "/system/system_error_monitor",
+    "publishers": {
+        "/diagnostics_err": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/emergency/hazard_status": "autoware_auto_system_msgs/msg/HazardStatusStamped",
+        "/system/clear_emergency": "std_srvs/srv/Trigger",
+        "/system/system_error_monitor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/system_error_monitor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/system_error_monitor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/system_error_monitor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/system_error_monitor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/system_error_monitor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/autoware/state": "autoware_auto_system_msgs/msg/AutowareState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/current_gate_mode": "tier4_control_msgs/msg/GateMode",
+        "/diagnostics_agg": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport"
+    }
+}

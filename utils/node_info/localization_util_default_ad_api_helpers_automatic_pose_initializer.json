@@ -1,0 +1,20 @@
+{
+    "Node": "/localization/util/default_ad_api/helpers/automatic_pose_initializer",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/util/default_ad_api/helpers/automatic_pose_initializer/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/localization/initialize": "autoware_adapi_v1_msgs/srv/InitializeLocalization"
+    },
+    "subscribers": {
+        "/api/localization/initialization_state": "autoware_adapi_v1_msgs/msg/LocalizationInitializationState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

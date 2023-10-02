@@ -1,0 +1,34 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/area_with_objects": "nav_msgs/msg/OccupancyGrid",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/calculation_time": "tier4_debug_msgs/msg/StringStamped",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/clearance_map": "nav_msgs/msg/OccupancyGrid",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/eb_trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/extended_fixed_traj": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/extended_non_fixed_traj": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/marker": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/mpt_fixed_traj": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/mpt_ref_traj": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/mpt_traj": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/object_clearance_map": "nav_msgs/msg/OccupancyGrid",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/debug/virtual_wall": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/planning/scenario_planning/lane_driving/behavior_planning/path": "autoware_auto_planning_msgs/msg/Path",
+        "/planning/scenario_planning/lane_driving/obstacle_avoidance_approval": "tier4_planning_msgs/msg/EnableAvoidance"
+    }
+}

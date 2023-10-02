@@ -1,0 +1,19 @@
+{
+    "Node": "/localization/util/map_height_fitter",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/util/fit_map_height": "tier4_localization_msgs/srv/PoseWithCovarianceStamped",
+        "/localization/util/map_height_fitter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/util/map_height_fitter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/util/map_height_fitter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/util/map_height_fitter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/util/map_height_fitter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/util/map_height_fitter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/pointcloud_map": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

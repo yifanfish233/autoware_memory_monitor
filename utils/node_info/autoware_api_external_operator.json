@@ -1,0 +1,25 @@
+{
+    "Node": "/autoware_api/external/operator",
+    "publishers": {
+        "/api/external/get/observer": "tier4_external_api_msgs/msg/Observer",
+        "/api/external/get/operator": "tier4_external_api_msgs/msg/Operator",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/observer": "tier4_external_api_msgs/srv/SetObserver",
+        "/api/external/set/operator": "tier4_external_api_msgs/srv/SetOperator",
+        "/autoware_api/external/operator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/operator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/operator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/operator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/operator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/operator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/autoware/set/observer": "tier4_external_api_msgs/srv/SetObserver",
+        "/api/autoware/set/operator": "tier4_external_api_msgs/srv/SetOperator"
+    },
+    "subscribers": {
+        "/api/autoware/get/observer": "tier4_external_api_msgs/msg/Observer",
+        "/api/autoware/get/operator": "tier4_external_api_msgs/msg/Operator",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

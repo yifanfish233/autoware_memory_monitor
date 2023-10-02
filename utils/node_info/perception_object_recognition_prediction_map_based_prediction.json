@@ -1,0 +1,21 @@
+{
+    "Node": "/perception/object_recognition/prediction/map_based_prediction",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/perception/object_recognition/prediction/maneuver": "visualization_msgs/msg/MarkerArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/prediction/map_based_prediction/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/prediction/map_based_prediction/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/prediction/map_based_prediction/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/prediction/map_based_prediction/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/prediction/map_based_prediction/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/prediction/map_based_prediction/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/tracking/objects": "autoware_auto_perception_msgs/msg/TrackedObjects"
+    }
+}

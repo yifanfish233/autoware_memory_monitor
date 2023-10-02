@@ -1,0 +1,19 @@
+{
+    "Node": "/map/pointcloud_map_loader",
+    "publishers": {
+        "/map/pointcloud_map": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/map/get_partial_pointcloud_map": "autoware_map_msgs/srv/GetPartialPointCloudMap",
+        "/map/pointcloud_map_loader/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/map/pointcloud_map_loader/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/map/pointcloud_map_loader/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/map/pointcloud_map_loader/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/map/pointcloud_map_loader/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/map/pointcloud_map_loader/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

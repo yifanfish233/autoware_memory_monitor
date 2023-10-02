@@ -1,0 +1,21 @@
+{
+    "Node": "/autoware_api/external/velocity",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/pause_driving": "tier4_external_api_msgs/srv/PauseDriving",
+        "/api/external/set/velocity_limit": "tier4_external_api_msgs/srv/SetVelocityLimit",
+        "/autoware_api/external/velocity/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/velocity/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/velocity/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/velocity/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/velocity/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/velocity/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/autoware/set/pause_driving": "tier4_external_api_msgs/srv/PauseDriving",
+        "/api/autoware/set/velocity_limit": "tier4_external_api_msgs/srv/SetVelocityLimit"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

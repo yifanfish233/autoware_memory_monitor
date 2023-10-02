@@ -1,0 +1,21 @@
+{
+    "Node": "/default_ad_api/helpers/initial_pose_adaptor",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/default_ad_api/helpers/initial_pose_adaptor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/helpers/initial_pose_adaptor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/helpers/initial_pose_adaptor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/helpers/initial_pose_adaptor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/helpers/initial_pose_adaptor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/helpers/initial_pose_adaptor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/localization/initialize": "autoware_adapi_v1_msgs/srv/InitializeLocalization",
+        "/localization/util/fit_map_height": "tier4_localization_msgs/srv/PoseWithCovarianceStamped"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/initialpose": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

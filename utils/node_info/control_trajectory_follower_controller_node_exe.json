@@ -1,0 +1,27 @@
+{
+    "Node": "/control/trajectory_follower/controller_node_exe",
+    "publishers": {
+        "/control/trajectory_follower/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/control/trajectory_follower/lateral/diagnostic": "tier4_debug_msgs/msg/Float32MultiArrayStamped",
+        "/control/trajectory_follower/lateral/predicted_trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/control/trajectory_follower/longitudinal/diagnostic": "tier4_debug_msgs/msg/Float32MultiArrayStamped",
+        "/control/trajectory_follower/longitudinal/slope_angle": "tier4_debug_msgs/msg/Float32MultiArrayStamped",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/control/trajectory_follower/controller_node_exe/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/trajectory_follower/controller_node_exe/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/trajectory_follower/controller_node_exe/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/trajectory_follower/controller_node_exe/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/trajectory_follower/controller_node_exe/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/trajectory_follower/controller_node_exe/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/acceleration": "geometry_msgs/msg/AccelWithCovarianceStamped",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/vehicle/status/steering_status": "autoware_auto_vehicle_msgs/msg/SteeringReport"
+    }
+}

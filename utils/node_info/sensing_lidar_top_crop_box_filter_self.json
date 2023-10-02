@@ -1,0 +1,22 @@
+{
+    "Node": "/sensing/lidar/top/crop_box_filter_self",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/lidar/top/crop_box_filter/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/sensing/lidar/top/crop_box_filter/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/sensing/lidar/top/crop_box_filter_self/crop_box_polygon": "geometry_msgs/msg/PolygonStamped",
+        "/sensing/lidar/top/self_cropped/pointcloud_ex": "sensor_msgs/msg/PointCloud2",
+        "/sensing/lidar/top/crop_box_filter_self/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/sensing/lidar/top/crop_box_filter_self/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/sensing/lidar/top/crop_box_filter_self/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/sensing/lidar/top/crop_box_filter_self/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/sensing/lidar/top/crop_box_filter_self/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/sensing/lidar/top/crop_box_filter_self/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/top/pointcloud_raw_ex": "sensor_msgs/msg/PointCloud2"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Node": "/awapi/predict_object_relay",
+    "publishers": {
+        "/awapi/prediction/get/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/predict_object_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/predict_object_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/predict_object_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/predict_object_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/predict_object_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/predict_object_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects"
+    }
+}

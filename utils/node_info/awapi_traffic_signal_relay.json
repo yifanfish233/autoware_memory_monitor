@@ -1,0 +1,19 @@
+{
+    "Node": "/awapi/traffic_signal_relay",
+    "publishers": {
+        "/awapi/traffic_light/get/traffic_signals": "autoware_auto_perception_msgs/msg/TrafficSignalArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/traffic_signal_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/traffic_signal_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/traffic_signal_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/traffic_signal_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/traffic_signal_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/traffic_signal_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/traffic_signals": "autoware_auto_perception_msgs/msg/TrafficSignalArray"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Node": "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/detection_by_tracker/debug/divided_objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/perception/object_recognition/detection/detection_by_tracker/debug/initial_objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/perception/object_recognition/detection/detection_by_tracker/debug/merged_objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/perception/object_recognition/detection/detection_by_tracker/debug/tracked_objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/perception/object_recognition/detection/detection_by_tracker/objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/clustering/objects_with_feature": "tier4_perception_msgs/msg/DetectedObjectsWithFeature",
+        "/perception/object_recognition/tracking/objects": "autoware_auto_perception_msgs/msg/TrackedObjects"
+    }
+}

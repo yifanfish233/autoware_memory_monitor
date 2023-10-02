@@ -1,0 +1,22 @@
+{
+    "Node": "/perception/occupancy_grid_map/occupancy_grid_map_node",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/occupancy_grid_map/map": "nav_msgs/msg/OccupancyGrid",
+        "/perception/occupancy_grid_map/pointcloud_based_occupancy_grid_map/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/occupancy_grid_map/pointcloud_based_occupancy_grid_map/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/occupancy_grid_map/occupancy_grid_map_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/obstacle_segmentation/single_frame/pointcloud_raw": "sensor_msgs/msg/PointCloud2",
+        "/sensing/lidar/concatenated/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

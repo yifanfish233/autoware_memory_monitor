@@ -1,0 +1,20 @@
+{
+    "Node": "/control/shift_decider",
+    "publishers": {
+        "/control/shift_decider/gear_cmd": "autoware_auto_vehicle_msgs/msg/GearCommand",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/control/shift_decider/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/shift_decider/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/shift_decider/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/shift_decider/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/shift_decider/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/shift_decider/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/autoware/state": "autoware_auto_system_msgs/msg/AutowareState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/trajectory_follower/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

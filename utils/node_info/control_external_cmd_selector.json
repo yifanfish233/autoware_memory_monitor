@@ -1,0 +1,33 @@
+{
+    "Node": "/control/external_cmd_selector",
+    "publishers": {
+        "/control/external_cmd_selector/current_selector_mode": "tier4_control_msgs/msg/ExternalCommandSelectorMode",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/external/selected/external_control_cmd": "tier4_external_api_msgs/msg/ControlCommandStamped",
+        "/external/selected/gear_cmd": "autoware_auto_vehicle_msgs/msg/GearCommand",
+        "/external/selected/hazard_lights_cmd": "autoware_auto_vehicle_msgs/msg/HazardLightsCommand",
+        "/external/selected/heartbeat": "tier4_external_api_msgs/msg/Heartbeat",
+        "/external/selected/turn_indicators_cmd": "autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/control/external_cmd_selector/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/external_cmd_selector/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/external_cmd_selector/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/external_cmd_selector/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/external_cmd_selector/select_external_command": "tier4_control_msgs/srv/ExternalCommandSelect",
+        "/control/external_cmd_selector/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/external_cmd_selector/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/api/external/set/command/local/control": "tier4_external_api_msgs/msg/ControlCommandStamped",
+        "/api/external/set/command/local/heartbeat": "tier4_external_api_msgs/msg/Heartbeat",
+        "/api/external/set/command/local/shift": "tier4_external_api_msgs/msg/GearShiftStamped",
+        "/api/external/set/command/local/turn_signal": "tier4_external_api_msgs/msg/TurnSignalStamped",
+        "/api/external/set/command/remote/control": "tier4_external_api_msgs/msg/ControlCommandStamped",
+        "/api/external/set/command/remote/heartbeat": "tier4_external_api_msgs/msg/Heartbeat",
+        "/api/external/set/command/remote/shift": "tier4_external_api_msgs/msg/GearShiftStamped",
+        "/api/external/set/command/remote/turn_signal": "tier4_external_api_msgs/msg/TurnSignalStamped",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

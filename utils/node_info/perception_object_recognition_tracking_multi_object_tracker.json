@@ -1,0 +1,19 @@
+{
+    "Node": "/perception/object_recognition/tracking/multi_object_tracker",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/tracking/objects": "autoware_auto_perception_msgs/msg/TrackedObjects",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/tracking/multi_object_tracker/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/tracking/multi_object_tracker/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/tracking/multi_object_tracker/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/tracking/multi_object_tracker/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/tracking/multi_object_tracker/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/tracking/multi_object_tracker/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/objects": "autoware_auto_perception_msgs/msg/DetectedObjects"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "Node": "/planning/scenario_planning/parking/freespace_planner",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/parking/freespace_planner/debug/partial_pose_array": "geometry_msgs/msg/PoseArray",
+        "/planning/scenario_planning/parking/freespace_planner/debug/pose_array": "geometry_msgs/msg/PoseArray",
+        "/planning/scenario_planning/parking/is_completed": "std_msgs/msg/Bool",
+        "/planning/scenario_planning/parking/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/parking/freespace_planner/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/parking/freespace_planner/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/parking/freespace_planner/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/parking/freespace_planner/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/parking/freespace_planner/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/parking/freespace_planner/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/planning/scenario_planning/parking/costmap_generator/occupancy_grid": "nav_msgs/msg/OccupancyGrid",
+        "/planning/scenario_planning/scenario": "tier4_planning_msgs/msg/Scenario"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "Node": "/default_ad_api/node/autoware_state",
+    "publishers": {
+        "/autoware/state": "autoware_auto_system_msgs/msg/AutowareState",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/autoware/shutdown": "std_srvs/srv/Trigger",
+        "/default_ad_api/node/autoware_state/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/node/autoware_state/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/node/autoware_state/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/node/autoware_state/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/node/autoware_state/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/node/autoware_state/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/api/localization/initialization_state": "autoware_adapi_v1_msgs/msg/LocalizationInitializationState",
+        "/api/operation_mode/state": "autoware_adapi_v1_msgs/msg/OperationModeState",
+        "/api/routing/state": "autoware_adapi_v1_msgs/msg/RouteState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/component_state_monitor/component/launch/control": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/localization": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/map": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/perception": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/planning": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/sensing": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/system": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/vehicle": "tier4_system_msgs/msg/ModeChangeAvailable"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "Node": "/system/component_state_monitor/component",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/component_state_monitor/component/autonomous/control": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/localization": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/map": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/perception": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/planning": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/sensing": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/system": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/vehicle": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/control": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/localization": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/map": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/perception": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/planning": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/sensing": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/system": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/launch/vehicle": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/component_state_monitor/component/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/component_state_monitor/component/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/component_state_monitor/component/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/component_state_monitor/component/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/component_state_monitor/component/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Node": "/localization/util/random_downsample_filter",
+    "publishers": {
+        "/localization/util/downsample/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/util/random_downsample_filter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/util/random_downsample_filter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/util/random_downsample_filter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/util/random_downsample_filter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/util/random_downsample_filter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/util/random_downsample_filter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/util/voxel_grid_downsample/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

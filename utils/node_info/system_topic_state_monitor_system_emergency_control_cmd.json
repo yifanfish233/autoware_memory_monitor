@@ -1,0 +1,19 @@
+{
+    "Node": "/system/topic_state_monitor_system_emergency_control_cmd",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/topic_state_monitor_system_emergency_control_cmd/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/topic_state_monitor_system_emergency_control_cmd/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/topic_state_monitor_system_emergency_control_cmd/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/topic_state_monitor_system_emergency_control_cmd/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/topic_state_monitor_system_emergency_control_cmd/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/topic_state_monitor_system_emergency_control_cmd/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/emergency/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand"
+    }
+}

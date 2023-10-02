@@ -1,0 +1,21 @@
+{
+    "Node": "/system/mrm_emergency_stop_operator",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/emergency/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/system/mrm/emergency_stop/status": "tier4_system_msgs/msg/MrmBehaviorStatus",
+        "/system/mrm/emergency_stop/operate": "tier4_system_msgs/srv/OperateMrm",
+        "/system/mrm_emergency_stop_operator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/mrm_emergency_stop_operator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/mrm_emergency_stop_operator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/mrm_emergency_stop_operator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/mrm_emergency_stop_operator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/mrm_emergency_stop_operator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/command/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

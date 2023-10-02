@@ -1,0 +1,17 @@
+{
+    "Node": "/autoware_api/internal/intersection_states",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/autoware_api/internal/intersection_states/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/internal/intersection_states/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/internal/intersection_states/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/internal/intersection_states/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/internal/intersection_states/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/internal/intersection_states/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

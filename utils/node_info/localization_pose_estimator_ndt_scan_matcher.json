@@ -1,0 +1,39 @@
+{
+    "Node": "/localization/pose_estimator/ndt_scan_matcher",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/localization/pose_estimator/exe_time_ms": "tier4_debug_msgs/msg/Float32Stamped",
+        "/localization/pose_estimator/initial_pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/pose_estimator/initial_to_result_distance": "tier4_debug_msgs/msg/Float32Stamped",
+        "/localization/pose_estimator/initial_to_result_distance_new": "tier4_debug_msgs/msg/Float32Stamped",
+        "/localization/pose_estimator/initial_to_result_distance_old": "tier4_debug_msgs/msg/Float32Stamped",
+        "/localization/pose_estimator/iteration_num": "tier4_debug_msgs/msg/Int32Stamped",
+        "/localization/pose_estimator/monte_carlo_initial_pose_marker": "visualization_msgs/msg/MarkerArray",
+        "/localization/pose_estimator/monte_carlo_points_aligned": "sensor_msgs/msg/PointCloud2",
+        "/localization/pose_estimator/ndt_marker": "visualization_msgs/msg/MarkerArray",
+        "/localization/pose_estimator/nearest_voxel_transformation_likelihood": "tier4_debug_msgs/msg/Float32Stamped",
+        "/localization/pose_estimator/points_aligned": "sensor_msgs/msg/PointCloud2",
+        "/localization/pose_estimator/pose": "geometry_msgs/msg/PoseStamped",
+        "/localization/pose_estimator/pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/pose_estimator/transform_probability": "tier4_debug_msgs/msg/Float32Stamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/localization/pose_estimator/ndt_align_srv": "tier4_localization_msgs/srv/PoseWithCovarianceStamped",
+        "/localization/pose_estimator/ndt_scan_matcher/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/pose_estimator/ndt_scan_matcher/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/pose_estimator/ndt_scan_matcher/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/pose_estimator/ndt_scan_matcher/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/pose_estimator/ndt_scan_matcher/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/pose_estimator/ndt_scan_matcher/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/localization/pose_estimator/trigger_node": "std_srvs/srv/SetBool"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/pose_twist_fusion_filter/biased_pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/util/downsample/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/map/pointcloud_map": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/gnss/pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped"
+    }
+}

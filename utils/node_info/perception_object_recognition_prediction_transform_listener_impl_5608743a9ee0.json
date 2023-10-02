@@ -1,0 +1,11 @@
+{
+    "Node": "/perception/object_recognition/prediction/transform_listener_impl_5608743a9ee0",
+    "publishers": {
+        "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "subscribers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/tf_static": "tf2_msgs/msg/TFMessage"
+    }
+}

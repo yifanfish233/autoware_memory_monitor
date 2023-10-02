@@ -1,0 +1,25 @@
+{
+    "Node": "/planning/scenario_planning/scenario_selector",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/scenario": "tier4_planning_msgs/msg/Scenario",
+        "/planning/scenario_planning/scenario_selector/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/scenario_selector/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/scenario_selector/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/scenario_selector/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/scenario_selector/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/scenario_selector/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/scenario_selector/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/planning/scenario_planning/lane_driving/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/planning/scenario_planning/parking/is_completed": "std_msgs/msg/Bool",
+        "/planning/scenario_planning/parking/trajectory": "autoware_auto_planning_msgs/msg/Trajectory"
+    }
+}

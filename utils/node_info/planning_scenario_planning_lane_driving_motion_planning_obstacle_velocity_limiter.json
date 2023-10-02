@@ -1,0 +1,26 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/lane_driving/motion_planning/debug_markers": "visualization_msgs/msg/MarkerArray",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/output/runtime_microseconds": "std_msgs/msg/Int64",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/perception/occupancy_grid_map/map": "nav_msgs/msg/OccupancyGrid",
+        "/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner/trajectory": "autoware_auto_planning_msgs/msg/Trajectory"
+    }
+}

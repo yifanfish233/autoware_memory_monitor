@@ -1,0 +1,19 @@
+{
+    "Node": "/autoware_api/external/fail_safe_state",
+    "publishers": {
+        "/api/external/get/fail_safe/state": "tier4_external_api_msgs/msg/FailSafeStateStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/autoware_api/external/fail_safe_state/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/fail_safe_state/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/fail_safe_state/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/fail_safe_state/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/fail_safe_state/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/fail_safe_state/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/fail_safe/mrm_state": "autoware_adapi_v1_msgs/msg/MrmState"
+    }
+}

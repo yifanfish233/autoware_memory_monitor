@@ -1,0 +1,28 @@
+{
+    "Node": "/autoware_api/internal/operator",
+    "publishers": {
+        "/api/autoware/get/observer": "tier4_external_api_msgs/msg/Observer",
+        "/api/autoware/get/operator": "tier4_external_api_msgs/msg/Operator",
+        "/control/gate_mode_cmd": "tier4_control_msgs/msg/GateMode",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/autoware/set/observer": "tier4_external_api_msgs/srv/SetObserver",
+        "/api/autoware/set/operator": "tier4_external_api_msgs/srv/SetOperator",
+        "/autoware_api/internal/operator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/internal/operator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/internal/operator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/internal/operator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/internal/operator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/internal/operator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/control/external_cmd_selector/select_external_command": "tier4_control_msgs/srv/ExternalCommandSelect",
+        "/system/operation_mode/change_autoware_control": "tier4_system_msgs/srv/ChangeAutowareControl"
+    },
+    "subscribers": {
+        "/api/autoware/get/emergency": "tier4_external_api_msgs/msg/Emergency",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/current_gate_mode": "tier4_control_msgs/msg/GateMode",
+        "/control/external_cmd_selector/current_selector_mode": "tier4_control_msgs/msg/ExternalCommandSelectorMode",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport"
+    }
+}

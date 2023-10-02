@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/pose_initialization_request_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/pose_initialization_request_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/pose_initialization_request_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/pose_initialization_request_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/pose_initialization_request_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/pose_initialization_request_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/pose_initialization_request_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Node": "/localization/pose_twist_fusion_filter/twist2accel",
+    "publishers": {
+        "/localization/acceleration": "geometry_msgs/msg/AccelWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/pose_twist_fusion_filter/twist2accel/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/pose_twist_fusion_filter/twist2accel/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/pose_twist_fusion_filter/twist2accel/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/pose_twist_fusion_filter/twist2accel/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/pose_twist_fusion_filter/twist2accel/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/pose_twist_fusion_filter/twist2accel/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/localization/twist_estimator/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

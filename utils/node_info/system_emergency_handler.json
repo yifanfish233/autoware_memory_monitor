@@ -1,0 +1,29 @@
+{
+    "Node": "/system/emergency_handler",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/emergency/gear_cmd": "autoware_auto_vehicle_msgs/msg/GearCommand",
+        "/system/emergency/hazard_lights_cmd": "autoware_auto_vehicle_msgs/msg/HazardLightsCommand",
+        "/system/emergency_handler/output/control_command": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/system/fail_safe/mrm_state": "autoware_adapi_v1_msgs/msg/MrmState",
+        "/system/emergency_handler/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/emergency_handler/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/emergency_handler/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/emergency_handler/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/emergency_handler/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/emergency_handler/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/system/mrm/comfortable_stop/operate": "tier4_system_msgs/srv/OperateMrm",
+        "/system/mrm/emergency_stop/operate": "tier4_system_msgs/srv/OperateMrm"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/command/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/emergency/hazard_status": "autoware_auto_system_msgs/msg/HazardStatusStamped",
+        "/system/mrm/comfortable_stop/status": "tier4_system_msgs/msg/MrmBehaviorStatus",
+        "/system/mrm/emergency_stop/status": "tier4_system_msgs/msg/MrmBehaviorStatus",
+        "/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport"
+    }
+}

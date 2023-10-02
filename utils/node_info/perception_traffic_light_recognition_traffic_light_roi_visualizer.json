@@ -1,0 +1,24 @@
+{
+    "Node": "/perception/traffic_light_recognition/traffic_light_roi_visualizer",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/debug/rois": "sensor_msgs/msg/Image",
+        "/perception/traffic_light_recognition/debug/rois/compressed": "sensor_msgs/msg/CompressedImage",
+        "/perception/traffic_light_recognition/debug/rois/compressedDepth": "sensor_msgs/msg/CompressedImage",
+        "/perception/traffic_light_recognition/debug/rois/theora": "theora_image_transport/msg/Packet",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/traffic_light_recognition/traffic_light_roi_visualizer/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/rois": "autoware_auto_perception_msgs/msg/TrafficLightRoiArray",
+        "/perception/traffic_light_recognition/traffic_signals": "autoware_auto_perception_msgs/msg/TrafficSignalArray",
+        "/sensing/camera/traffic_light/image_raw": "sensor_msgs/msg/Image"
+    }
+}

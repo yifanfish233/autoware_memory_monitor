@@ -1,0 +1,22 @@
+{
+    "Node": "/perception/object_recognition/detection/voxel_based_compare_map_filter",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/pointcloud_map_filtered/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/voxel_based_compare_map_filter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/pointcloud_map": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

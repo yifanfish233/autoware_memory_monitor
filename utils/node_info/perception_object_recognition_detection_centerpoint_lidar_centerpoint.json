@@ -1,0 +1,21 @@
+{
+    "Node": "/perception/object_recognition/detection/centerpoint/lidar_centerpoint",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/object_recognition/detection/centerpoint/objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/centerpoint/lidar_centerpoint/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/concatenated/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

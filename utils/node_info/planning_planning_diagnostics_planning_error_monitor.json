@@ -1,0 +1,20 @@
+{
+    "Node": "/planning/planning_diagnostics/planning_error_monitor",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/planning_diagnostics/planning_error_monitor/debug/marker": "visualization_msgs/msg/MarkerArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/planning_diagnostics/planning_error_monitor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/planning_diagnostics/planning_error_monitor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/planning_diagnostics/planning_error_monitor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/planning_diagnostics/planning_error_monitor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/planning_diagnostics/planning_error_monitor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/planning_diagnostics/planning_error_monitor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/trajectory": "autoware_auto_planning_msgs/msg/Trajectory"
+    }
+}

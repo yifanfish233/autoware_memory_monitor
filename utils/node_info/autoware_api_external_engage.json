@@ -1,0 +1,23 @@
+{
+    "Node": "/autoware_api/external/engage",
+    "publishers": {
+        "/api/external/get/engage": "tier4_external_api_msgs/msg/EngageStatus",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/engage": "tier4_external_api_msgs/srv/Engage",
+        "/autoware_api/external/engage/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/engage/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/engage/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/engage/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/engage/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/engage/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/autoware/set/engage": "tier4_external_api_msgs/srv/Engage",
+        "/api/autoware/set/operator": "tier4_external_api_msgs/srv/SetOperator"
+    },
+    "subscribers": {
+        "/api/autoware/get/engage": "autoware_auto_vehicle_msgs/msg/Engage",
+        "/autoware/state": "autoware_auto_system_msgs/msg/AutowareState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

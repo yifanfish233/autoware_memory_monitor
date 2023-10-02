@@ -1,0 +1,22 @@
+{
+    "Node": "/autoware_api/internal/velocity",
+    "publishers": {
+        "/api/autoware/get/velocity_limit": "tier4_planning_msgs/msg/VelocityLimit",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/max_velocity_default": "tier4_planning_msgs/msg/VelocityLimit",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/autoware/set/pause_driving": "tier4_external_api_msgs/srv/PauseDriving",
+        "/api/autoware/set/velocity_limit": "tier4_external_api_msgs/srv/SetVelocityLimit",
+        "/autoware_api/internal/velocity/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/internal/velocity/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/internal/velocity/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/internal/velocity/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/internal/velocity/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/internal/velocity/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/current_max_velocity": "tier4_planning_msgs/msg/VelocityLimit"
+    }
+}

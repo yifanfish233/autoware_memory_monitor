@@ -1,0 +1,22 @@
+{
+    "Node": "/localization/util/crop_box_filter_measurement_range",
+    "publishers": {
+        "/localization/util/crop_box_filter/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/localization/util/crop_box_filter/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/localization/util/crop_box_filter_measurement_range/crop_box_polygon": "geometry_msgs/msg/PolygonStamped",
+        "/localization/util/measurement_range/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/util/crop_box_filter_measurement_range/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/util/crop_box_filter_measurement_range/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/util/crop_box_filter_measurement_range/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/util/crop_box_filter_measurement_range/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/util/crop_box_filter_measurement_range/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/util/crop_box_filter_measurement_range/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/top/outlier_filtered/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

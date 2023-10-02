@@ -1,0 +1,21 @@
+{
+    "Node": "/autoware_api/external/door",
+    "publishers": {
+        "/api/external/get/door": "tier4_external_api_msgs/msg/DoorStatus",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/external/set/door": "tier4_external_api_msgs/srv/SetDoor",
+        "/autoware_api/external/door/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/door/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/door/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/door/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/door/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/door/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/vehicle/set/door": "tier4_external_api_msgs/srv/SetDoor"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/vehicle/status/door_status": "tier4_api_msgs/msg/DoorStatus"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/running_modules_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/running_modules_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/running_modules_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/running_modules_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/running_modules_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/running_modules_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/running_modules_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

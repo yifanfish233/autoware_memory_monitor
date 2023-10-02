@@ -1,0 +1,19 @@
+{
+    "Node": "/system/topic_state_monitor_vector_map",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/topic_state_monitor_vector_map/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/topic_state_monitor_vector_map/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/topic_state_monitor_vector_map/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/topic_state_monitor_vector_map/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/topic_state_monitor_vector_map/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/topic_state_monitor_vector_map/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

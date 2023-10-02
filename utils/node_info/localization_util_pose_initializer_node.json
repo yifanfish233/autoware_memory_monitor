@@ -1,0 +1,27 @@
+{
+    "Node": "/localization/util/pose_initializer_node",
+    "publishers": {
+        "/initialpose3d": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/initialization_state": "autoware_adapi_v1_msgs/msg/LocalizationInitializationState",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/localization/initialize": "autoware_adapi_v1_msgs/srv/InitializeLocalization",
+        "/localization/util/pose_initializer_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/util/pose_initializer_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/util/pose_initializer_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/util/pose_initializer_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/util/pose_initializer_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/util/pose_initializer_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/localization/pose_estimator/ndt_align_srv": "tier4_localization_msgs/srv/PoseWithCovarianceStamped",
+        "/localization/pose_estimator/trigger_node": "std_srvs/srv/SetBool",
+        "/localization/pose_twist_fusion_filter/trigger_node": "std_srvs/srv/SetBool",
+        "/localization/util/fit_map_height": "tier4_localization_msgs/srv/PoseWithCovarianceStamped"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/gnss/pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/sensing/vehicle_velocity_converter/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped"
+    }
+}

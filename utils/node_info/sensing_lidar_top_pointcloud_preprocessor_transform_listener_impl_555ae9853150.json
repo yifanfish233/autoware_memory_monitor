@@ -1,0 +1,11 @@
+{
+    "Node": "/sensing/lidar/top/pointcloud_preprocessor/transform_listener_impl_555ae9853150",
+    "publishers": {
+        "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "subscribers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/tf_static": "tf2_msgs/msg/TFMessage"
+    }
+}

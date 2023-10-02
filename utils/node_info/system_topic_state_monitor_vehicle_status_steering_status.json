@@ -1,0 +1,19 @@
+{
+    "Node": "/system/topic_state_monitor_vehicle_status_steering_status",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/topic_state_monitor_vehicle_status_steering_status/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/topic_state_monitor_vehicle_status_steering_status/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/topic_state_monitor_vehicle_status_steering_status/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/topic_state_monitor_vehicle_status_steering_status/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/topic_state_monitor_vehicle_status_steering_status/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/topic_state_monitor_vehicle_status_steering_status/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/vehicle/status/steering_status": "autoware_auto_vehicle_msgs/msg/SteeringReport"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Node": "/autoware_api/external/route",
+    "publishers": {
+        "/api/external/get/route": "tier4_external_api_msgs/msg/Route",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/api/external/set/clear_route": "tier4_external_api_msgs/srv/ClearRoute",
+        "/api/external/set/route": "tier4_external_api_msgs/srv/SetRoute",
+        "/autoware_api/external/route/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/route/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/route/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/route/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/route/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/route/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/api/routing/clear_route": "autoware_adapi_v1_msgs/srv/ClearRoute",
+        "/api/routing/set_route": "autoware_adapi_v1_msgs/srv/SetRoute"
+    },
+    "subscribers": {
+        "/api/routing/route": "autoware_adapi_v1_msgs/msg/Route",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

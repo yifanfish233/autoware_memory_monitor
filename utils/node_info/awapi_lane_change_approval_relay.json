@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/lane_change_approval_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/lane_change_approval_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/lane_change_approval_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/lane_change_approval_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/lane_change_approval_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/lane_change_approval_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/lane_change_approval_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Node": "/perception/traffic_light_recognition/traffic_light_image_decompressor",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/camera/traffic_light/image_raw": "sensor_msgs/msg/Image",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/traffic_light_recognition/traffic_light_image_decompressor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/camera/traffic_light/image_raw/compressed": "sensor_msgs/msg/CompressedImage"
+    }
+}

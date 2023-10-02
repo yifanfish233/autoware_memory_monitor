@@ -1,0 +1,20 @@
+{
+    "Node": "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/temporary_merged_objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/object_recognition/detection/object_association_merger_robotlab_3060_988691_7575328895949728369/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/detection/centerpoint/validation/objects": "autoware_auto_perception_msgs/msg/DetectedObjects",
+        "/perception/object_recognition/detection/clustering/objects": "autoware_auto_perception_msgs/msg/DetectedObjects"
+    }
+}

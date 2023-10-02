@@ -1,0 +1,19 @@
+{
+    "Node": "/sensing/imu/imu_corrector",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/imu/imu_data": "sensor_msgs/msg/Imu",
+        "/sensing/imu/imu_corrector/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/sensing/imu/imu_corrector/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/sensing/imu/imu_corrector/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/sensing/imu/imu_corrector/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/sensing/imu/imu_corrector/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/sensing/imu/imu_corrector/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/imu/tamagawa/imu_raw": "sensor_msgs/msg/Imu"
+    }
+}

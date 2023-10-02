@@ -1,0 +1,21 @@
+{
+    "Node": "/autoware_api/external/initial_pose",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/api/external/set/initialize_pose": "tier4_external_api_msgs/srv/InitializePose",
+        "/api/external/set/initialize_pose_auto": "tier4_external_api_msgs/srv/InitializePoseAuto",
+        "/autoware_api/external/initial_pose/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/initial_pose/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/initial_pose/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/initial_pose/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/initial_pose/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/initial_pose/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/localization/initialize": "autoware_adapi_v1_msgs/srv/InitializeLocalization"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

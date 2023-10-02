@@ -1,0 +1,23 @@
+{
+    "Node": "/localization/twist_estimator/gyro_odometer",
+    "publishers": {
+        "/localization/twist_estimator/gyro_twist": "geometry_msgs/msg/TwistStamped",
+        "/localization/twist_estimator/gyro_twist_raw": "geometry_msgs/msg/TwistStamped",
+        "/localization/twist_estimator/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/localization/twist_estimator/twist_with_covariance_raw": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/twist_estimator/gyro_odometer/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/twist_estimator/gyro_odometer/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/twist_estimator/gyro_odometer/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/twist_estimator/gyro_odometer/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/twist_estimator/gyro_odometer/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/twist_estimator/gyro_odometer/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/imu/imu_data": "sensor_msgs/msg/Imu",
+        "/sensing/vehicle_velocity_converter/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/overwrite_traffic_signals_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/overwrite_traffic_signals_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/overwrite_traffic_signals_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/overwrite_traffic_signals_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/overwrite_traffic_signals_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/overwrite_traffic_signals_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/overwrite_traffic_signals_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

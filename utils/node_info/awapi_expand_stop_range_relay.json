@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/expand_stop_range_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/expand_stop_range_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/expand_stop_range_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/expand_stop_range_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/expand_stop_range_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/expand_stop_range_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/expand_stop_range_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

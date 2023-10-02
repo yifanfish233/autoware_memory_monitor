@@ -1,0 +1,23 @@
+{
+    "Node": "/planning/scenario_planning/parking/costmap_generator",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/parking/costmap_generator/grid_map": "grid_map_msgs/msg/GridMap",
+        "/planning/scenario_planning/parking/costmap_generator/occupancy_grid": "nav_msgs/msg/OccupancyGrid",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/parking/costmap_generator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/parking/costmap_generator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/parking/costmap_generator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/parking/costmap_generator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/parking/costmap_generator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/parking/costmap_generator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/objects": "autoware_auto_perception_msgs/msg/PredictedObjects",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/planning/scenario_planning/scenario": "tier4_planning_msgs/msg/Scenario"
+    }
+}

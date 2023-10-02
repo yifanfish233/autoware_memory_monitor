@@ -1,0 +1,17 @@
+{
+    "Node": "/awapi/force_lane_change_relay",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/awapi/force_lane_change_relay/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/awapi/force_lane_change_relay/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/awapi/force_lane_change_relay/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/awapi/force_lane_change_relay/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/awapi/force_lane_change_relay/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/awapi/force_lane_change_relay/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

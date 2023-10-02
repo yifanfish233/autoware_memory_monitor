@@ -1,0 +1,36 @@
+{
+    "Node": "/default_ad_api/node/operation_mode",
+    "publishers": {
+        "/api/operation_mode/state": "autoware_adapi_v1_msgs/msg/OperationModeState",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/api/operation_mode/change_to_autonomous": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/api/operation_mode/change_to_local": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/api/operation_mode/change_to_remote": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/api/operation_mode/change_to_stop": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/api/operation_mode/disable_autoware_control": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/api/operation_mode/enable_autoware_control": "autoware_adapi_v1_msgs/srv/ChangeOperationMode",
+        "/default_ad_api/node/operation_mode/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/default_ad_api/node/operation_mode/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/default_ad_api/node/operation_mode/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/default_ad_api/node/operation_mode/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/default_ad_api/node/operation_mode/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/default_ad_api/node/operation_mode/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/system/operation_mode/change_autoware_control": "tier4_system_msgs/srv/ChangeAutowareControl",
+        "/system/operation_mode/change_operation_mode": "tier4_system_msgs/srv/ChangeOperationMode"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/component_state_monitor/component/autonomous/control": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/localization": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/map": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/perception": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/planning": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/sensing": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/system": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/component_state_monitor/component/autonomous/vehicle": "tier4_system_msgs/msg/ModeChangeAvailable",
+        "/system/operation_mode/state": "autoware_adapi_v1_msgs/msg/OperationModeState"
+    }
+}

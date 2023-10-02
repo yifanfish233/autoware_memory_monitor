@@ -1,0 +1,19 @@
+{
+    "Node": "/autoware_api/external/cpu_usage",
+    "publishers": {
+        "/api/external/get/cpu_usage": "tier4_external_api_msgs/msg/CpuUsage",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/autoware_api/external/cpu_usage/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/external/cpu_usage/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/external/cpu_usage/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/external/cpu_usage/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/external/cpu_usage/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/external/cpu_usage/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/system/system_monitor/cpu_monitor/cpu_usage": "tier4_external_api_msgs/msg/CpuUsage"
+    }
+}

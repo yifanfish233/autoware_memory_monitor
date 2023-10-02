@@ -1,0 +1,20 @@
+{
+    "Node": "/aggregator_node",
+    "publishers": {
+        "/diagnostics_agg": "diagnostic_msgs/msg/DiagnosticArray",
+        "/diagnostics_toplevel_state": "diagnostic_msgs/msg/DiagnosticStatus",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/aggregator_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/aggregator_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/aggregator_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/aggregator_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/aggregator_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/aggregator_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

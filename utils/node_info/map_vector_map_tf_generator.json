@@ -1,0 +1,19 @@
+{
+    "Node": "/map/vector_map_tf_generator",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/tf_static": "tf2_msgs/msg/TFMessage",
+        "/map/vector_map_tf_generator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/map/vector_map_tf_generator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/map/vector_map_tf_generator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/map/vector_map_tf_generator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/map/vector_map_tf_generator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/map/vector_map_tf_generator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

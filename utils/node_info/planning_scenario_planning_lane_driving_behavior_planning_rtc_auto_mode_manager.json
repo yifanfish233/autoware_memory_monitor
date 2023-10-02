@@ -1,0 +1,41 @@
+{
+    "Node": "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/enable_auto_mode/avoidance_left": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/avoidance_right": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/blind_spot": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/crosswalk": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/detection_area": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/intersection": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/lane_change_left": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/lane_change_right": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/no_stopping_area": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/pull_out": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/pull_over": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/traffic_light": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/lane_driving/behavior_planning/rtc_auto_mode_manager/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/planning/enable_auto_mode/internal/avoidance_left": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/avoidance_right": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/blind_spot": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/crosswalk": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/detection_area": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/intersection": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/lane_change_left": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/lane_change_right": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/no_stopping_area": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/pull_out": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/pull_over": "tier4_rtc_msgs/srv/AutoMode",
+        "/planning/enable_auto_mode/internal/traffic_light": "tier4_rtc_msgs/srv/AutoMode"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Node": "/map/map_hash_generator",
+    "publishers": {
+        "/api/autoware/get/map/info/hash": "tier4_external_api_msgs/msg/MapHash",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/api/autoware/get/map/lanelet/xml": "tier4_external_api_msgs/srv/GetTextFile",
+        "/map/map_hash_generator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/map/map_hash_generator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/map/map_hash_generator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/map/map_hash_generator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/map/map_hash_generator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/map/map_hash_generator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock"
+    }
+}

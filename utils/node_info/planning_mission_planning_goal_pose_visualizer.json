@@ -1,0 +1,19 @@
+{
+    "Node": "/planning/mission_planning/goal_pose_visualizer",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/echo_back_goal_pose": "geometry_msgs/msg/PoseStamped",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/mission_planning/goal_pose_visualizer/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/mission_planning/goal_pose_visualizer/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/mission_planning/goal_pose_visualizer/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/mission_planning/goal_pose_visualizer/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/mission_planning/goal_pose_visualizer/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/mission_planning/goal_pose_visualizer/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute"
+    }
+}

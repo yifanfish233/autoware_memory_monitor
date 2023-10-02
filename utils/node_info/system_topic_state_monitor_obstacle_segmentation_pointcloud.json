@@ -1,0 +1,19 @@
+{
+    "Node": "/system/topic_state_monitor_obstacle_segmentation_pointcloud",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/system/topic_state_monitor_obstacle_segmentation_pointcloud/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/obstacle_segmentation/pointcloud": "sensor_msgs/msg/PointCloud2"
+    }
+}

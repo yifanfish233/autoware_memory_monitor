@@ -1,0 +1,21 @@
+{
+    "Node": "/sensing/lidar/top/ring_outlier_filter",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/sensing/lidar/top/outlier_filtered/pointcloud": "sensor_msgs/msg/PointCloud2",
+        "/sensing/lidar/top/ring_outlier_filter/debug/cyclic_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/sensing/lidar/top/ring_outlier_filter/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/sensing/lidar/top/ring_outlier_filter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/sensing/lidar/top/ring_outlier_filter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/sensing/lidar/top/ring_outlier_filter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/sensing/lidar/top/ring_outlier_filter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/sensing/lidar/top/ring_outlier_filter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/sensing/lidar/top/ring_outlier_filter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/sensing/lidar/top/rectified/pointcloud_ex": "sensor_msgs/msg/PointCloud2"
+    }
+}

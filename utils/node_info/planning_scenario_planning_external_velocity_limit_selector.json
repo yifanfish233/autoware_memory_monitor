@@ -1,0 +1,21 @@
+{
+    "Node": "/planning/scenario_planning/external_velocity_limit_selector",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/max_velocity": "tier4_planning_msgs/msg/VelocityLimit",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/planning/scenario_planning/external_velocity_limit_selector/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/planning/scenario_planning/external_velocity_limit_selector/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/planning/scenario_planning/external_velocity_limit_selector/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/planning/scenario_planning/external_velocity_limit_selector/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/planning/scenario_planning/external_velocity_limit_selector/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/planning/scenario_planning/external_velocity_limit_selector/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/clear_velocity_limit": "tier4_planning_msgs/msg/VelocityLimitClearCommand",
+        "/planning/scenario_planning/max_velocity_candidates": "tier4_planning_msgs/msg/VelocityLimit",
+        "/planning/scenario_planning/max_velocity_default": "tier4_planning_msgs/msg/VelocityLimit"
+    }
+}

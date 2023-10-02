@@ -1,0 +1,25 @@
+{
+    "Node": "/control/external_cmd_converter",
+    "publishers": {
+        "/api/external/get/command/selected/control": "tier4_external_api_msgs/msg/ControlCommandStamped",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/external/selected/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/control/external_cmd_converter/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/external_cmd_converter/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/external_cmd_converter/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/external_cmd_converter/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/external_cmd_converter/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/external_cmd_converter/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/current_gate_mode": "tier4_control_msgs/msg/GateMode",
+        "/external/selected/external_control_cmd": "tier4_external_api_msgs/msg/ControlCommandStamped",
+        "/external/selected/gear_cmd": "autoware_auto_vehicle_msgs/msg/GearCommand",
+        "/external/selected/heartbeat": "tier4_external_api_msgs/msg/Heartbeat",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

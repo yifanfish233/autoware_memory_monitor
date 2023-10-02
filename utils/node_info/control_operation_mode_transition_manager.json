@@ -1,0 +1,34 @@
+{
+    "Node": "/control/operation_mode_transition_manager",
+    "publishers": {
+        "/autoware/engage": "autoware_auto_vehicle_msgs/msg/Engage",
+        "/control/gate_mode_cmd": "tier4_control_msgs/msg/GateMode",
+        "/control/operation_mode_transition_manager/debug_info": "operation_mode_transition_manager/msg/OperationModeTransitionManagerDebug",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/service_log": "tier4_system_msgs/msg/ServiceLog",
+        "/system/operation_mode/state": "autoware_adapi_v1_msgs/msg/OperationModeState",
+        "/control/operation_mode_transition_manager/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/operation_mode_transition_manager/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/operation_mode_transition_manager/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/operation_mode_transition_manager/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/operation_mode_transition_manager/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/operation_mode_transition_manager/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/system/operation_mode/change_autoware_control": "tier4_system_msgs/srv/ChangeAutowareControl",
+        "/system/operation_mode/change_operation_mode": "tier4_system_msgs/srv/ChangeOperationMode",
+        "/control/control_mode_request": "autoware_auto_vehicle_msgs/srv/ControlModeCommand",
+        "/control/external_cmd_selector/select_external_command": "tier4_control_msgs/srv/ExternalCommandSelect"
+    },
+    "subscribers": {
+        "/api/autoware/get/engage": "autoware_auto_vehicle_msgs/msg/Engage",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/command/control_cmd": "autoware_auto_control_msgs/msg/AckermannControlCommand",
+        "/control/current_gate_mode": "tier4_control_msgs/msg/GateMode",
+        "/control/external_cmd_selector/current_selector_mode": "tier4_control_msgs/msg/ExternalCommandSelectorMode",
+        "/control/vehicle_cmd_gate/operation_mode": "autoware_adapi_v1_msgs/msg/OperationModeState",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/scenario_planning/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport"
+    }
+}

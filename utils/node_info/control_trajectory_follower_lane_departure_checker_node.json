@@ -1,0 +1,28 @@
+{
+    "Node": "/control/trajectory_follower/lane_departure_checker_node",
+    "publishers": {
+        "/control/trajectory_follower/lane_departure_checker_node/debug/deviation/lateral": "tier4_debug_msgs/msg/Float64Stamped",
+        "/control/trajectory_follower/lane_departure_checker_node/debug/deviation/yaw": "tier4_debug_msgs/msg/Float64Stamped",
+        "/control/trajectory_follower/lane_departure_checker_node/debug/deviation/yaw_deg": "tier4_debug_msgs/msg/Float64Stamped",
+        "/control/trajectory_follower/lane_departure_checker_node/debug/marker_array": "visualization_msgs/msg/MarkerArray",
+        "/control/trajectory_follower/lane_departure_checker_node/debug/processing_time_ms": "diagnostic_msgs/msg/DiagnosticStatus",
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/control/trajectory_follower/lane_departure_checker_node/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/control/trajectory_follower/lane_departure_checker_node/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/control/trajectory_follower/lane_departure_checker_node/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/control/trajectory_follower/lane_departure_checker_node/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/control/trajectory_follower/lane_departure_checker_node/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/control/trajectory_follower/lane_departure_checker_node/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/control/trajectory_follower/lateral/predicted_trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute",
+        "/planning/scenario_planning/trajectory": "autoware_auto_planning_msgs/msg/Trajectory"
+    }
+}

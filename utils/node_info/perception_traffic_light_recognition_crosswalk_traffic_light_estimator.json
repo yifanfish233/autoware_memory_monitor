@@ -1,0 +1,22 @@
+{
+    "Node": "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator",
+    "publishers": {
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/debug/processing_time_ms": "tier4_debug_msgs/msg/Float64Stamped",
+        "/perception/traffic_light_recognition/traffic_signals": "autoware_auto_perception_msgs/msg/TrafficSignalArray",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/perception/traffic_light_recognition/crosswalk_traffic_light_estimator/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/map/vector_map": "autoware_auto_mapping_msgs/msg/HADMapBin",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/traffic_light_recognition/classified/traffic_signals": "autoware_auto_perception_msgs/msg/TrafficSignalArray",
+        "/planning/mission_planning/route": "autoware_planning_msgs/msg/LaneletRoute"
+    }
+}

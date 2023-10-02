@@ -1,0 +1,32 @@
+{
+    "Node": "/localization/pose_twist_fusion_filter/ekf_localizer",
+    "publishers": {
+        "/localization/pose_twist_fusion_filter/biased_pose": "geometry_msgs/msg/PoseStamped",
+        "/localization/pose_twist_fusion_filter/biased_pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/pose_twist_fusion_filter/debug": "tier4_debug_msgs/msg/Float64MultiArrayStamped",
+        "/localization/pose_twist_fusion_filter/debug/measured_pose": "geometry_msgs/msg/PoseStamped",
+        "/localization/pose_twist_fusion_filter/estimated_yaw_bias": "tier4_debug_msgs/msg/Float64Stamped",
+        "/localization/pose_twist_fusion_filter/kinematic_state": "nav_msgs/msg/Odometry",
+        "/localization/pose_twist_fusion_filter/pose": "geometry_msgs/msg/PoseStamped",
+        "/localization/pose_twist_fusion_filter/twist": "geometry_msgs/msg/TwistStamped",
+        "/localization/pose_twist_fusion_filter/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/localization/pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/pose_twist_fusion_filter/ekf_localizer/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically",
+        "/localization/pose_twist_fusion_filter/trigger_node": "std_srvs/srv/SetBool"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/initialpose3d": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/pose_estimator/pose_with_covariance": "geometry_msgs/msg/PoseWithCovarianceStamped",
+        "/localization/twist_estimator/twist_with_covariance": "geometry_msgs/msg/TwistWithCovarianceStamped",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

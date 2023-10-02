@@ -1,0 +1,20 @@
+{
+    "Node": "/localization/localization_error_monitor",
+    "publishers": {
+        "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/localization/debug/ellipse_marker": "visualization_msgs/msg/Marker",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/localization/localization_error_monitor/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/localization/localization_error_monitor/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/localization/localization_error_monitor/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/localization/localization_error_monitor/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/localization/localization_error_monitor/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/localization/localization_error_monitor/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/localization/kinematic_state": "nav_msgs/msg/Odometry",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent"
+    }
+}

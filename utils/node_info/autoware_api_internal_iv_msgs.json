@@ -1,0 +1,26 @@
+{
+    "Node": "/autoware_api/internal/iv_msgs",
+    "publishers": {
+        "/api/iv_msgs/autoware/state": "tier4_system_msgs/msg/AutowareState",
+        "/api/iv_msgs/perception/object_recognition/tracking/objects": "tier4_perception_msgs/msg/DynamicObjectArray",
+        "/api/iv_msgs/planning/scenario_planning/trajectory": "tier4_planning_msgs/msg/Trajectory",
+        "/api/iv_msgs/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/rosout": "rcl_interfaces/msg/Log",
+        "/autoware_api/internal/iv_msgs/describe_parameters": "rcl_interfaces/srv/DescribeParameters",
+        "/autoware_api/internal/iv_msgs/get_parameter_types": "rcl_interfaces/srv/GetParameterTypes",
+        "/autoware_api/internal/iv_msgs/get_parameters": "rcl_interfaces/srv/GetParameters",
+        "/autoware_api/internal/iv_msgs/list_parameters": "rcl_interfaces/srv/ListParameters",
+        "/autoware_api/internal/iv_msgs/set_parameters": "rcl_interfaces/srv/SetParameters",
+        "/autoware_api/internal/iv_msgs/set_parameters_atomically": "rcl_interfaces/srv/SetParametersAtomically"
+    },
+    "subscribers": {
+        "/autoware/state": "autoware_auto_system_msgs/msg/AutowareState",
+        "/clock": "rosgraph_msgs/msg/Clock",
+        "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+        "/perception/object_recognition/tracking/objects": "autoware_auto_perception_msgs/msg/TrackedObjects",
+        "/planning/scenario_planning/trajectory": "autoware_auto_planning_msgs/msg/Trajectory",
+        "/system/fail_safe/mrm_state": "autoware_adapi_v1_msgs/msg/MrmState",
+        "/vehicle/status/control_mode": "autoware_auto_vehicle_msgs/msg/ControlModeReport"
+    }
+}
